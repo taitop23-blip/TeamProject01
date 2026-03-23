@@ -21,7 +21,30 @@ void AMyActor::BeginPlay()
 // Called every frame
 void AMyActor::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
+	Super::Tick(DeltaTime);// MyActor.cpp
+
+
+#include "MyActor.h"
+
+	AMyActor::AMyActor()
+	{
+		PrimaryActorTick.bCanEverTick = true;
+
+	}
+
+	void AMyActor::BeginPlay()
+	{
+		Super::BeginPlay();
+
+	}
+
+	void AMyActor::Tick(float DeltaTime)
+	{
+		Super::Tick(DeltaTime);
+
+	}
+
+
 
 }
 
